@@ -2,6 +2,6 @@
 lastname: "Vardhan Gangala"
 firstname: "Harsha"
 role: "Masters Student"
-status: "active"
+status: "alumn"
 image_path: /assets/images/headshots/Harsha_Gangala.jpg
 ---
