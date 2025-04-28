@@ -7,6 +7,8 @@ author_profile: true
 
 ## Articles and Interviews
 
+- "Dramatic cuts in China’s air pollution drove surge in global warming" in [The New Scientist](https://www.newscientist.com/article/2474067-dramatic-cuts-in-chinas-air-pollution-drove-surge-in-global-warming/) (2025)
+
 - "We’ve been accidentally cooling the planet — and it’s about to stop" in [The Washington Post](https://www.washingtonpost.com/climate-environment/2024/06/25/climate-aerosols-shipping-global-cooling/) (2024)
 
 - "Generative AI in Science” in [ACM](https://cacm.acm.org/news/scientific-applications-of-generative-ai/) (2024)
