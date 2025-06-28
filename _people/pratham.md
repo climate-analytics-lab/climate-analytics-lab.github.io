@@ -1,8 +1,9 @@
 ---
 lastname: "Aggarwal"
 firstname: "Pratham"
-pub_id: "Wynn S"
-role: "Undergraduate Student"
+role: "Undergraduate Researcher"
 status: "active"
-image_path: /assets/images/headshots/Pratham_Aggarwal.jpg
+pronouns: "he/him"
+image_path: /assets/images/pratham.jpg
+website: "https://pratham-aggr.github.io"
 ---
