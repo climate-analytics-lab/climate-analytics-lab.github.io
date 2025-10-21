@@ -6,5 +6,5 @@ role: "Undergraduate Student"
 status: "active"
 pronouns: "he/him"
 image_path: /assets/images/headshots/pratham.jpg
-website: "https://pratham-aggr.github.io"
+website: "https://www.linkedin.com/in/pratham-agg"
 ---
