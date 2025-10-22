@@ -6,6 +6,6 @@ role: "Masters Student"
 status: "active"
 pronouns: "he/him"
 sort_display: 2
-image_path: /assets/images/headshots/Shreejith.jpeg
+image_path: /assets/images/headshots/Shreejith.jpg
 website: "https://shreejithsg.github.io/"
 ---
