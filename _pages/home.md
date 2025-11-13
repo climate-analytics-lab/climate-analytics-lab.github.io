@@ -16,11 +16,18 @@ intro:
 #   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
 #   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
-  - image_path: /assets/images/climatebench.png
-    alt: "Global temperature map"
-    title: "ClimateBench"
-    excerpt: "A benchmark dataset for the emulation of full-complexity climate models."
-    url: "/projects/climatebench_app/"
+  - image_path: /assets/images/jaxgcm_teaser.png
+    alt: "JAX-GCM differentiable climate model"
+    title: "JAX-GCM"
+    excerpt: "A fully differentiable climate model enabling ML-enhanced climate science and gradient-based optimization."
+    url: "/projects/jaxgcm/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/gaia_teaser.png
+    alt: "GAIA Initiative"
+    title: "GAIA Initiative"
+    excerpt: "Harnessing AI to understand, forecast, and steward Earth's complex systems through interdisciplinary collaboration."
+    url: "/projects/gaia/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/shiptracks_small.jpg
@@ -28,6 +35,15 @@ feature_row:
     title: "Detecting ship tracks"
     excerpt: "Using machine learning to automatically detect the brightening effect that shipping can have on clouds."
     url: "/projects/shiptracks"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
+feature_row2:
+  - image_path: /assets/images/climatebench.png
+    alt: "Global temperature map"
+    title: "ClimateBench"
+    excerpt: "A benchmark dataset for the emulation of full-complexity climate models."
+    url: "/projects/climatebench_app/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/emulator_schematic.svg
@@ -44,6 +60,8 @@ feature_row:
 ## Project Highlights
 
 {% include feature_row %}
+
+{% include feature_row id="feature_row2" %}
 
 ## News
 

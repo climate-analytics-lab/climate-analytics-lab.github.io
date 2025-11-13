@@ -1,11 +1,16 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# Use modern Jekyll instead of github-pages gem
+# Site will be built via GitHub Actions
+gem "jekyll", "~> 4.3"
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-# If you have any plugins, put them here!
+# Theme
+gem "minimal-mistakes-jekyll"
+
+# Plugins
 group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
@@ -14,6 +19,10 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-scholar", "~> 7.2"
+  gem "jekyll-seo-tag"
 end
 
 gem "webrick", "~> 1.8"
+gem "csv"
+gem "base64"
