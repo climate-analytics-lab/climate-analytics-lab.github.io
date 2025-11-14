@@ -290,7 +290,7 @@ compress_html:
 # jekyll-scholar
 # https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
 scholar:
-  style: "nature-publishing-group-vancouver"
+  style: "copernicus-publications"
   locale: en
 
   source: ./_data
