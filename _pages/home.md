@@ -16,29 +16,20 @@ intro:
 #   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
 #   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
-  - image_path: /assets/images/jaxgcm_teaser.png
+  - image_path: https://github.com/climate-analytics-lab/jax-gcm/blob/main/logo.png?raw=true
     alt: "JAX-GCM differentiable climate model"
     title: "JAX-GCM"
     excerpt: "A fully differentiable climate model enabling ML-enhanced climate science and gradient-based optimization."
     url: "/projects/jaxgcm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/gaia_teaser.png
+  - image_path: /assets/images/GAIA_logo.png
     alt: "GAIA Initiative"
     title: "GAIA Initiative"
     excerpt: "Harnessing AI to understand, forecast, and steward Earth's complex systems through interdisciplinary collaboration."
     url: "/projects/gaia/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/shiptracks_small.jpg
-    alt: "Shiptracks"
-    title: "Detecting ship tracks"
-    excerpt: "Using machine learning to automatically detect the brightening effect that shipping can have on clouds."
-    url: "/projects/shiptracks"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-
-feature_row2:
   - image_path: /assets/images/climatebench.png
     alt: "Global temperature map"
     title: "ClimateBench"
@@ -46,13 +37,22 @@ feature_row2:
     url: "/projects/climatebench_app/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/emulator_schematic.svg
-    alt: "Emulator schematic"
-    title: "Model Emulation for Calibration"
-    excerpt: "Developing climate model emulators for better parameter estimation and calibration."
-    url: "/projects/emulation/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
+
+# feature_row2:
+#   - image_path: /assets/images/shiptracks_small.jpg
+#     alt: "Shiptracks"
+#     title: "Detecting ship tracks"
+#     excerpt: "Using machine learning to automatically detect the brightening effect that shipping can have on clouds."
+#     url: "/projects/shiptracks"
+#     btn_class: "btn--primary"
+#     btn_label: "Learn more"
+#   - image_path: /assets/images/emulator_schematic.svg
+#     alt: "Emulator schematic"
+#     title: "Model Emulation for Calibration"
+#     excerpt: "Developing climate model emulators for better parameter estimation and calibration."
+#     url: "/projects/emulation/"
+#     btn_class: "btn--primary"
+#     btn_label: "Learn more"      
 ---
 
 {% include feature_row id="intro" type="center" %}
