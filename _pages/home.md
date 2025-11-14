@@ -16,7 +16,7 @@ intro:
 #   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
 #   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
-  - image_path: https://github.com/climate-analytics-lab/jax-gcm/blob/main/logo.png?raw=true
+  - image_path: "/assets/images/JCM_logo.png"
     alt: "JAX-GCM differentiable climate model"
     title: "JAX-GCM"
     excerpt: "A fully differentiable climate model enabling ML-enhanced climate science and gradient-based optimization."
