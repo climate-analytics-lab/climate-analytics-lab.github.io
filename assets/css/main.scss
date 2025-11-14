@@ -19,6 +19,9 @@ search: false
 	}
 }
 
+ol.bibliography li {
+  list-style: decimal
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
