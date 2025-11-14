@@ -9,8 +9,6 @@ toc: false
 
 \* = (co-)supervised
 
-Publications are managed using [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar). The bibliography is stored in `_data/publications.bib` and can be exported directly from your Zotero library. See `ZOTERO_WORKFLOW.md` for detailed instructions.
-
 {% bibliography %}
 
 <!--
