@@ -3,8 +3,8 @@
 
 {% for person in site.people %}
  {% unless person.pub_id %}
-    {% assign first_initial = person.firstname | slice: 0 | prepend: ' ' %}
-    {% assign old_name = person.lastname | append: first_initial %}
+    {% assign first_initial = person.firstname | slice: 0 | prepend: ', ' %}
+    {% assign old_name = person.lastname | append: first_initial | append: '.' %}
  {% else %}
     {% assign old_name = person.pub_id %}
  {% endunless %}

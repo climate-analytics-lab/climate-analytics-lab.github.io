@@ -1,7 +1,7 @@
 ---
 lastname: "Williams"
 firstname: "Andrew"
-pub_id: "Williams AIL"
+pub_id: "Williams, A. I. L."
 role: "Postdoctoral Scholar"
 status: "active"
 pronouns: "he/him"

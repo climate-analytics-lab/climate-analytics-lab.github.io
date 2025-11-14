@@ -7,8 +7,6 @@ toc: false
 
 ## Publications
 
-\* = (co-)supervised
-
 {% bibliography %}
 
 <!--
