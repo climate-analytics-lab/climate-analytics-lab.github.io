@@ -1,7 +1,6 @@
 ---
 lastname: "Watson-Parris"
 firstname: "Duncan"
-pub_id: "Duncan WP"
 role: "Group Leader"
 status: "active"
 pronouns: "he/him"
