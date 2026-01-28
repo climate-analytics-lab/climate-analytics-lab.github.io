@@ -6,6 +6,13 @@ toc: true
 toc_sticky: true
 ---
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var total = document.querySelectorAll('ol.bibliography li').length + 1;
+  document.querySelector('.page__content').style.counterReset = 'publication ' + total;
+});
+</script>
+
 ## 2025
 {% bibliography --query @*[year=2025] %}
 

@@ -22,10 +22,21 @@ search: false
 ol.bibliography {
   font-size: 0.75em;
   line-height: 1.4;
+  list-style: none;
+  padding-left: 2.5em;
 
   li {
-    list-style: decimal;
+    counter-increment: publication -1;
     margin-bottom: 0.75em;
+    position: relative;
+
+    &::before {
+      content: counter(publication) ".";
+      position: absolute;
+      left: -2.5em;
+      width: 2em;
+      text-align: right;
+    }
   }
 
   .pub-note {
