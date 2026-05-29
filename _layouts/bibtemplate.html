@@ -12,11 +12,19 @@
  {% assign reference = reference | replace_first: old_name, new_name %}
 {% endfor %}
 
+{% assign note_text = entry.note | strip %}
+{% assign is_supervised = false %}
+{% if note_text == 'supervised' %}{% assign is_supervised = true %}{% endif %}
+
 {% assign clean_reference = reference | replace: 'https://doi.org/', '' | replace: 'http://doi.org/', '' %}
 {% assign clean_reference = clean_reference | replace: entry.doi, '' %}
 {% assign clean_reference = clean_reference | replace: ', ,', ',' %}
+{% if is_supervised %}
+  {% assign clean_reference = clean_reference | replace: ', supervised.', '.' | replace: ', supervised', '' | replace: 'supervised.', '' | replace: 'supervised', '' %}
+{% endif %}
 
 <div class="text-justify">
+    {% if is_supervised %}<span class="pub-supervised" title="(Co-)supervised work">*</span>{% endif %}
     {{ clean_reference }}
     {% if entry.doi %}
     <a href="https://doi.org/{{ entry.doi }}">[doi]</a>
@@ -25,7 +33,7 @@
     {% endif %}
 </div>
 
-{% if entry.note %}
+{% if entry.note and is_supervised == false %}
 <div class="pub-note">
     <em>{{ entry.note | markdownify | remove: '<p>' | remove: '</p>' }}</em>
 </div>

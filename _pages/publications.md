@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<small>\* denotes work I (co-)supervised.</small>
+
+## 2026
+{% bibliography --query @*[year=2026] %}
+
+
 ## 2025
 {% bibliography --query @*[year=2025] %}
 
