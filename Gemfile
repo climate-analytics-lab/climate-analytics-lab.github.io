@@ -10,6 +10,10 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # Theme
 gem "minimal-mistakes-jekyll"
 
+# Pin: sass-embedded 1.100.0 fails to build (requires json >= 2.20 for JSON::Fragment).
+# Drop this pin once upstream releases a fix.
+gem "sass-embedded", "< 1.100"
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-paginate"
