@@ -23,7 +23,7 @@ Welcome! The first two weeks get everyone set up, cover the domain and the prima
 - [ ] Gain access to Casper (see the course home page) and confirm you can start both a CPU and a GPU job
 - [ ] Join the class Slack channel
 - [ ] Create one team GitHub repository, with a `NOTES.md` decision log (see [Working with AI assistants](/dsc_180/#working-with-ai-assistants))
-- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, and `jax`, then install jax-gcm and JAX-ESM from source following the [JAX-ESM installation steps](https://github.com/climate-analytics-lab/jax-esm#installation), which pin the jax-gcm revision JAX-ESM is tested against. Check that `jax.devices()` shows the GPU on a GPU node. We won't use these until week 4, but it's better to find installation problems now.
+- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, `scikit-learn`, `jax`, `flax`, and `optax`. Check that `jax.devices()` shows the GPU on a GPU node. (You'll install the climate models themselves in week 4.)
 
 **Readings (by the start of week 2 section)**
 

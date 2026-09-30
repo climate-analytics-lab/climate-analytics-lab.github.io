@@ -25,7 +25,7 @@ Forcing and feedback together set how much warming a given emission scenario pro
 
 ### Tasks
 
-1. **First run.** Work through JCM's [`notebooks/01_jcm_demo.ipynb`](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/01_jcm_demo.ipynb) on a Casper GPU node, including the gradient cells at the end.
+1. **Install and first run.** Install JCM and JAX-ESM into your environment (`pip install jcm jax-esm`), then work through JCM's [`notebooks/01_jcm_demo.ipynb`](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/01_jcm_demo.ipynb) on a Casper GPU node, including the gradient cells at the end.
 2. **Throughput.** Time a 1-year SPEEDY run on CPU and on GPU, separating compilation time from run time. Report simulated years per wall-clock hour. You will need this number to plan every later experiment.
 3. **Control run.** Run the realistic present-day configuration (`python -m jcm.main +configuration=speedy-t31`, or the equivalent in Python with realistic terrain and climatological forcing) for at least 1 year of spin-up plus 10 years, saving monthly means. Record the exact configuration in your repo.
 4. **Evaluate the climatology** against ERA5 (on Casper through the NCAR RDA) and against the NorESM2-LM historical climatology you used in weeks 1–2:
