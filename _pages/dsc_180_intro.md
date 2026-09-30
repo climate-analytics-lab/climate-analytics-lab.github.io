@@ -20,10 +20,11 @@ Welcome! The first two weeks get everyone set up, cover the domain and the prima
 
 **Setup (week 1)**
 
-- [ ] Gain access to Casper (see the course home page) and confirm you can start both a CPU and a GPU job
+- [ ] Log in to [DataHub](https://datahub.ucsd.edu) and start a GPU server
+- [ ] Gain access to Casper (see the course home page) and confirm you can log in and start a small CPU job. You'll only need it for the raw-data tasks in week 2 and for ERA5 in week 4.
 - [ ] Join the class Slack channel
 - [ ] Create one team GitHub repository, with a `NOTES.md` decision log (see [Working with AI assistants](/dsc_180/#working-with-ai-assistants))
-- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, `scikit-learn`, `jax`, `flax`, and `optax`. Check that `jax.devices()` shows the GPU on a GPU node. (You'll install the climate models themselves in week 4.)
+- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, `scikit-learn`, `jax`, `flax`, and `optax`. Check that `jax.devices()` shows the GPU on DataHub. (You'll install the climate models themselves in week 4.)
 
 **Readings (by the start of week 2 section)**
 
@@ -33,13 +34,13 @@ Welcome! The first two weeks get everyone set up, cover the domain and the prima
 
 **Data (week 2)**
 
-Start from the example notebook with the Casper paths, and the processed files on [Zenodo](https://doi.org/10.5281/zenodo.5196512).
+Do tasks 1–3 on DataHub, using the processed files from [Zenodo](https://doi.org/10.5281/zenodo.5196512). Tasks 4 and 5 need the raw CMIP6 output on Casper.
 
 1. Plot maps of the 2005–2015 mean of each ClimateBench target (`tas`, `diurnal_temperature_range`, `pr`, `pr90`). Also plot the difference from 1850–1900 in the `historical` experiment, with appropriate colorbars, units, and titles.
 2. Plot **area-weighted** global-mean time series of each target for all training experiments (`historical`, `ssp126`, `ssp370`, `ssp585`, `hist-GHG`, `hist-aer`) and `ssp245`. Show the spread across ensemble members.
 3. Plot the four inputs (CO₂, CH₄, SO₂, BC) for each scenario. Which inputs are global scalars, and which are maps? How does cumulative CO₂ relate to the temperature time series in (2)?
-4. **Regenerate one experiment from raw CMIP6.** Take `ssp245` (or another experiment) and rebuild the four targets from the raw NorESM2-LM daily `tas`, `tasmin`, `tasmax`, and `pr` on Casper (`/glade/collections/cmip/CMIP6/{activity}/NCC/NorESM2-LM/{experiment}`). Then diff your result against the Zenodo file. Use the definitions in the paper and [`prepare_data.py`](https://github.com/duncanwp/ClimateBench/blob/main/prepare_data.py). Aim for agreement to within floating-point precision, and if you can't get there, explain why.
-5. Each team member picks one additional CMIP6 variable (for example sea-level pressure, cloud cover, or TOA radiation) and produces the same plots for it.
+4. **Regenerate one experiment from raw CMIP6.** On Casper, take `ssp245` (or another experiment) and rebuild the four targets from the raw NorESM2-LM daily `tas`, `tasmin`, `tasmax`, and `pr` on Casper (`/glade/collections/cmip/CMIP6/{activity}/NCC/NorESM2-LM/{experiment}`). One ensemble member is enough; keep the job small, since our core hours are limited. Then diff your result against the Zenodo file. Use the definitions in the paper and [`prepare_data.py`](https://github.com/duncanwp/ClimateBench/blob/main/prepare_data.py). Aim for agreement to within floating-point precision, and if you can't get there, explain why.
+5. On Casper, each team member picks one additional CMIP6 variable (for example sea-level pressure, cloud cover, or TOA radiation) and produces the same plots for it.
 
 ### Questions
 

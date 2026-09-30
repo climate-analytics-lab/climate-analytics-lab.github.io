@@ -25,10 +25,10 @@ Forcing and feedback together set how much warming a given emission scenario pro
 
 ### Tasks
 
-1. **Install and first run.** Install JCM and JAX-ESM into your environment (`pip install jcm jax-esm`), then work through JCM's [`notebooks/01_jcm_demo.ipynb`](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/01_jcm_demo.ipynb) on a Casper GPU node, including the gradient cells at the end.
+1. **Install and first run.** Install JCM and JAX-ESM into your environment (`pip install jcm jax-esm`), then work through JCM's [`notebooks/01_jcm_demo.ipynb`](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/01_jcm_demo.ipynb) on your DataHub GPU, including the gradient cells at the end.
 2. **Throughput.** Time a 1-year SPEEDY run on CPU and on GPU, separating compilation time from run time. Report simulated years per wall-clock hour. You will need this number to plan every later experiment.
 3. **Control run.** Run the realistic present-day configuration (`python -m jcm.main +configuration=speedy-t31`, or the equivalent in Python with realistic terrain and climatological forcing) for at least 1 year of spin-up plus 10 years, saving monthly means. Record the exact configuration in your repo.
-4. **Evaluate the climatology** against ERA5 (on Casper through the NCAR RDA) and against the NorESM2-LM historical climatology you used in weeks 1–2:
+4. **Evaluate the climatology** against ERA5 monthly means (on Casper through the NCAR RDA; subset to the few variables you need and move the result to DataHub) and against the NorESM2-LM historical climatology you used in weeks 1–2:
    - annual and seasonal (DJF/JJA) mean maps of near-surface temperature and precipitation, with bias maps and area-weighted pattern correlations
    - zonal-mean cross-sections of temperature and zonal wind (jets, Hadley cell)
    - the global-mean top-of-atmosphere (TOA) energy budget (incoming SW, reflected SW, OLR, and net)
