@@ -23,14 +23,13 @@ Welcome! The first two weeks get everyone set up, cover the domain and the prima
 - [ ] Gain access to Casper (see the course home page) and confirm you can start both a CPU and a GPU job
 - [ ] Join the class Slack channel
 - [ ] Create one team GitHub repository, with a `NOTES.md` decision log (see [Working with AI assistants](/dsc_180/#working-with-ai-assistants))
-- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, `jax`, and `jcm` (`pip install jcm`). Check that `jax.devices()` shows the GPU on a GPU node.
+- [ ] Create a Python ≥3.11 environment with `xarray`, `dask`, `netCDF4`, `cartopy`, and `jax`, then install jax-gcm and JAX-ESM from source following the [JAX-ESM installation steps](https://github.com/climate-analytics-lab/jax-esm#installation), which pin the jax-gcm revision JAX-ESM is tested against. Check that `jax.devices()` shows the GPU on a GPU node. We won't use these until week 4, but it's better to find installation problems now.
 
 **Readings (by the start of week 2 section)**
 
 - Skim the latest UN Intergovernmental Panel on Climate Change [Synthesis Report](https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_SPM.pdf) to get a summary of the latest climate change science, especially the figures.
 - Fully read the ClimateBench [paper](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021MS002954) by Watson-Parris et al.
 - Pick two citations within the introduction to the ClimateBench paper and skim-read them (the abstract, the conclusions, and the figures, plus the methods if relevant). Each team member should choose different citations.
-- Skim the [JCM paper](https://doi.org/10.5194/gmd-19-6451-2026) (sections 1–2 and the figures). We will read it properly in week 4.
 
 **Data (week 2)**
 
