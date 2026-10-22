@@ -23,9 +23,9 @@ I expect to take new PhD students for **Fall 2027** entry. I advise students thr
 
 To be considered, **apply directly to the program and name me as a potential advisor in your application** (and say why in your statement of purpose). I don't hold meetings with prospective students before applications are reviewed; shortlisted applicants are contacted as part of the admissions process.
 
-## Master's and undergraduate students
+## Current UC San Diego students
 
-Students interested in research projects should fill out the lab interest form, with a concrete idea of what you'd like to work on and how it connects to our [projects]({{ '/projects/' | relative_url }}) or [publications]({{ '/publications/' | relative_url }}). Forms are reviewed on a rolling basis as projects and capacity become available. I'll be in touch if there's a good fit, but please don't expect an individual reply.
+Undergraduate, master's and PhD students at UC San Diego who are interested in a research project should fill out the lab interest form. The strongest submissions have a concrete idea of what you'd like to work on and how it connects to our [projects]({{ '/projects/' | relative_url }}) or [publications]({{ '/publications/' | relative_url }}). Forms are reviewed on a rolling basis as projects and capacity become available. I'll be in touch if there's a good fit, but please don't expect an individual reply.
 
 {% if page.interest_form_url != "" %}
 <a href="{{ page.interest_form_url }}" class="btn btn--primary btn--large">Lab interest form</a>
@@ -33,9 +33,14 @@ Students interested in research projects should fill out the lab interest form, 
 <em>The interest form will be linked here shortly.</em>
 {% endif %}
 
-UC San Diego data science undergraduates can also work with the lab through the [DSC 180 capstone]({{ '/dsc_180/' | relative_url }}).
+Before applying, it helps to:
 
-High school students are welcome to use the same form, but should note that our capacity for high school projects is very limited.
+- Have a solid grounding in Python and machine learning, through courses such as SIO(c) 209 (see [Teaching]({{ '/teaching/' | relative_url }})) or equivalent experience.
+- Read some of our recent [publications]({{ '/publications/' | relative_url }}) and the [background reading list]({{ '/dsc_180_reading/' | relative_url }}) we use for new students.
+
+Data science undergraduates can also work with the lab through the [DSC 180 capstone]({{ '/dsc_180/' | relative_url }}).
+
+Unfortunately, we are not able to host students from outside UC San Diego other than through the postdoc and PhD routes above.
 
 ## Finding out more
 

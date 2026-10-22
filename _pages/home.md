@@ -58,7 +58,7 @@ feature_row:
 {% include feature_row id="intro" type="center" %}
 
 <div class="notice--info" markdown="1">
-**Interested in joining the lab?** We're unable to reply to unsolicited enquiries about positions. Current opportunities for postdocs, PhD, master's and undergraduate students, and how to apply, are on our [Join the Lab]({{ '/join/' | relative_url }}) page.
+**Interested in joining the lab?** We're unable to reply to unsolicited enquiries about positions. Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our [Join the Lab]({{ '/join/' | relative_url }}) page.
 </div>
 
 ## Project Highlights
