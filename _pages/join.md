@@ -1,0 +1,42 @@
+---
+permalink: /join/
+title: "Join the Lab"
+layout: single
+toc: true
+toc_sticky: true
+# Set this to the Google Form URL once it exists; the button below stays hidden until then.
+interest_form_url: ""
+---
+
+Thank you for your interest in the Climate Analytics Lab. I receive far more enquiries than I can answer individually, so **I am unable to reply to unsolicited emails about positions in the lab**, and I don't meet with prospective applicants outside the routes below. This isn't a reflection on you or your background; it keeps the process fair for everyone. Please follow the route for your stage below, which I keep up to date.
+
+## Postdoctoral researchers
+
+We will soon be recruiting postdoctoral researchers to work on [MOSAIC]({{ '/projects/mosaic/' | relative_url }}), which combines observations, symbolic equation discovery and differentiable simulation to discover new climate parameterizations. Positions will be advertised here, with instructions on how to apply, once they open. Please wait for the advert rather than emailing in advance.
+
+## PhD students
+
+I expect to take new PhD students for **Fall 2027** entry. I advise students through two UC San Diego programs:
+
+- [Climate, Atmospheric Science, and Physical Oceanography (CASPO)](https://scripps.ucsd.edu/doctoral) at Scripps Institution of Oceanography
+- [Data Science](https://datascience.ucsd.edu/graduate/graduate-admissions/) at the Halıcıoğlu Data Science Institute
+
+To be considered, **apply directly to the program and name me as a potential advisor in your application** (and say why in your statement of purpose). I don't hold meetings with prospective students before applications are reviewed; shortlisted applicants are contacted as part of the admissions process.
+
+## Master's and undergraduate students
+
+Students interested in research projects should fill out the lab interest form, with a concrete idea of what you'd like to work on and how it connects to our [projects]({{ '/projects/' | relative_url }}) or [publications]({{ '/publications/' | relative_url }}). Forms are reviewed on a rolling basis as projects and capacity become available. I'll be in touch if there's a good fit, but please don't expect an individual reply.
+
+{% if page.interest_form_url != "" %}
+<a href="{{ page.interest_form_url }}" class="btn btn--primary btn--large">Lab interest form</a>
+{% else %}
+<em>The interest form will be linked here shortly.</em>
+{% endif %}
+
+UC San Diego data science undergraduates can also work with the lab through the [DSC 180 capstone]({{ '/dsc_180/' | relative_url }}).
+
+High school students are welcome to use the same form, but should note that our capacity for high school projects is very limited.
+
+## Finding out more
+
+The best way to understand what we work on is through our [projects]({{ '/projects/' | relative_url }}), [publications]({{ '/publications/' | relative_url }}) and [lab philosophy]({{ '/philosophy/' | relative_url }}). If you join, the philosophy page describes what you can expect from me and from each other.

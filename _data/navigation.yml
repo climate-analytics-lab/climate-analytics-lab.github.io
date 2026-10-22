@@ -11,3 +11,5 @@ main:
     url: /media/
   - title: "Teaching"
     url: /teaching/
+  - title: "Join"
+    url: /join/
