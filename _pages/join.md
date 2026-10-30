@@ -5,7 +5,7 @@ layout: single
 toc: true
 toc_sticky: true
 # Set this to the Google Form URL once it exists; the button below stays hidden until then.
-interest_form_url: ""
+interest_form_url: "https://docs.google.com/forms/d/e/1FAIpQLScafZJVcQOb1dJgqGIBqFssAFxsvcDPQ3EgNvCyoti7zMTshQ/viewform"
 ---
 
 Thank you for your interest in the Climate Analytics Lab. I receive far more enquiries than I can answer individually, so **I am unable to reply to unsolicited emails about positions in the lab**, and I don't meet with prospective applicants outside the routes below. This isn't a reflection on you or your background; it keeps the process fair for everyone. Please follow the route for your stage below, which I keep up to date.
