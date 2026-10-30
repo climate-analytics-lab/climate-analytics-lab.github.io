@@ -13,7 +13,7 @@ toc_sticky: true
 
 We are seeking highly motivated Postdoctoral Researchers to join an interdisciplinary initiative at the intersection of machine learning and Earth system science. The successful candidates will play a central role in developing the next generation of Earth system models (ESMs) by harnessing emerging agentic AI approaches to automate the discovery and improvement of atmospheric parameterizations.
 
-A key component of this work is the recently Google-funded [MOSAIC]({{ '/projects/mosaic/' | relative_url }}) project, which combines observations, symbolic equation discovery and differentiable simulation, and rigorously evaluates and tests models against observations at scale using [ClimateBench2](https://github.com/climate-analytics-lab/ClimateBench2). Beyond the core project, the role offers the flexibility to broadly shape the future of AI for climate science.
+A key component of this work is the recently Google-funded [MOSAIC]({{ '/projects/mosaic/' | relative_url }}) project, which combines observations, symbolic equation discovery and differentiable simulation, and rigorously evaluates and tests models against observations at scale using [ClimateBench2](https://github.com/climate-federation/ClimateBench2). Beyond the core project, the role offers the flexibility to broadly shape the future of AI for climate science.
 
 ## Position highlights
 

@@ -3,6 +3,7 @@ title: "ClimateBench2"
 excerpt: "A probabilistic benchmark for evaluating physics-based, data-driven and hybrid climate models on an equal footing."
 header:
   teaser: "/assets/images/climatebench2.png"
+learn_more: https://arxiv.org/abs/2610.04558
 code: https://github.com/climate-federation/ClimateBench2
 data: https://doi.org/10.5281/zenodo.23436667
 
@@ -16,7 +17,7 @@ tags:
 
 ## Probabilistic climate model benchmarking
 
-ClimateBench v2 is a standardized protocol for evaluating *any* climate model (a traditional physics-based Earth system model, a data-driven emulator or AI climate model, or a hybrid that embeds learned components in a physical core) on diagnostics expected to be informative for its skill at projecting mid-century regional temperature and precipitation change. It is developed with a broad community of collaborators from modeling centers, universities and industry, and is described in Watson-Parris et al. (*ClimateBench v2.0: Probabilistic Climate Model Benchmarking*, submitted to JAMES).
+ClimateBench v2 is a standardized protocol for evaluating *any* climate model (a traditional physics-based Earth system model, a data-driven emulator or AI climate model, or a hybrid that embeds learned components in a physical core) on diagnostics expected to be informative for its skill at projecting mid-century regional temperature and precipitation change. It is developed with a broad community of collaborators from modeling centers, universities and industry, and is described in [Watson-Parris et al. (2026), *ClimateBench v2.0: Probabilistic Climate Model Benchmarking*](https://arxiv.org/abs/2610.04558).
 
 ## Context and motivation
 
