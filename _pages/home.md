@@ -64,8 +64,12 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
+<div class="notice--warning" markdown="1">
+**We're hiring postdocs!** Applications are open for Postdoctoral Researchers in AI for Climate Science on the [MOSAIC]({{ '/projects/mosaic/' | relative_url }}) project, using agentic AI to discover better climate-model parameterizations. See the [position details and how to apply]({{ '/join/mosaic-postdoc/' | relative_url }}).
+</div>
+
 <div class="notice--info" markdown="1">
-**Interested in joining the lab?** We're unable to reply to unsolicited enquiries about positions. Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our [Join the Lab]({{ '/join/' | relative_url }}) page.
+**Interested in joining the lab?** Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our [Join the Lab]({{ '/join/' | relative_url }}) page. Please apply through the routes described there; unfortunately we're unable to reply to unsolicited enquiries about positions.
 </div>
 
 ## Project Highlights
