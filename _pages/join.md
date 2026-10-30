@@ -12,7 +12,7 @@ Thank you for your interest in the Climate Analytics Lab. I receive far more enq
 
 ## Postdoctoral researchers
 
-We will soon be recruiting postdoctoral researchers to work on [MOSAIC]({{ '/projects/mosaic/' | relative_url }}), which combines observations, symbolic equation discovery and differentiable simulation to discover new climate parameterizations. Positions will be advertised here, with instructions on how to apply, once they open. Please wait for the advert rather than emailing in advance.
+We are recruiting postdoctoral researchers to work on [MOSAIC]({{ '/projects/mosaic/' | relative_url }}), which combines observations, symbolic equation discovery and differentiable simulation to discover new climate parameterizations. **Applications are open**: see the [position details and how to apply]({{ '/join/mosaic-postdoc/' | relative_url }}). Please apply as described there rather than emailing separately.
 
 ## PhD students
 
