@@ -31,7 +31,7 @@ The rapid development of machine-learned and hybrid climate models makes the que
 
 ## A held-out observational record
 
-The CMIP6 historical experiment ends in 2014. The decade since is the best-observed period in history, spans nearly a third of total warming to date, and was unavailable when the current generation of physical models was developed and tuned. ClimateBench v2 therefore reserves **all observations after 2015 as a test set**, and requires data-driven submissions to restrict their training to the same period. In an idealized single-model experiment, adding the 2015–2025 window halves the posterior variance of the 2050 warming, so this record carries real information about the benchmark target.
+The CMIP6 historical experiment ends in 2014. The decade since is the best-observed period in history, spans nearly a third of total warming to date, and was unavailable when the current generation of physical models was developed and tuned. ClimateBench v2 therefore reserves **all observations after 2015 as a test set**, and requires data-driven submissions to train only on data up to 2014, the same information available to the CMIP6-era physical models. In an idealized single-model experiment, adding the 2015–2025 window halves the posterior variance of the 2050 warming, so this record carries real information about the benchmark target.
 
 <figure>
   <img src="{{ '/assets/images/climatebench2_split.png' | relative_url }}" alt="Global-mean surface temperature anomaly from 1950 to 2050 showing CMIP6 models and observations, with the post-2015 test window shaded and the 2041–2050 target decade outlined; paleoclimate periods are shown at left." />
