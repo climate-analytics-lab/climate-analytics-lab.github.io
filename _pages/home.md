@@ -37,11 +37,11 @@ feature_row:
     url: "/projects/gaia/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/climatebench.png
-    alt: "Global temperature map"
-    title: "ClimateBench"
-    excerpt: "A benchmark dataset for the emulation of full-complexity climate models."
-    url: "/projects/climatebench_app/"
+  - image_path: /assets/images/climatebench2.png
+    alt: "Global-mean temperature from 1950 to 2050 showing the ClimateBench2 train, test and projection periods"
+    title: "ClimateBench2"
+    excerpt: "A probabilistic benchmark for evaluating physics-based, data-driven and hybrid climate models."
+    url: "/projects/climatebench2/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
