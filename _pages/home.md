@@ -2,19 +2,21 @@
 layout: splash
 permalink: /
 hidden: true
+classes: home-page
 header:
-#   overlay_color: "#5e616c"
   overlay_image: /assets/images/AdobeStock_184518220_lores.jpeg
-#   actions:
-    # - label: "<i class='fas fa-download'></i> Install now"
-    #   url: "/docs/quick-start-guide/"
-excerpt: 
-    "@ UC San Diego"
-intro: 
-  - excerpt: <cite>The Climate Analytics Lab aims to reduce uncertainty in the role of anthropogenic aerosol on the climate by exploiting recent advances in machine learning to enable improved projections and gain new insights from observations.</cite>
+  overlay_filter: "linear-gradient(100deg, rgba(8, 31, 60, 0.94) 0%, rgba(14, 64, 110, 0.82) 50%, rgba(23, 107, 175, 0.35) 100%)"
+  eyebrow: "UC San Diego"
+  actions:
+    - label: "Explore our research"
+      url: "/projects/"
+      class: "btn--hero-primary"
+    - label: "Join the lab"
+      url: "/join/"
+      class: "btn--hero-secondary"
+excerpt: "We combine AI, physics and observations to understand and predict our changing climate, and train the next generation of climate and data scientists."
+tagline: "**Understanding and predicting our changing climate.** We combine AI, physics and observations to study how aerosols, clouds and the wider climate system respond to human influence, and to build better tools for predicting it, from interpretable equations discovered in observations to differentiable models and rigorous benchmarks."
 
-#   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-#   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
   - image_path: "/assets/images/MOSAIC_logo_transparent.png"
     alt: "MOSAIC logo with stylized ocean waves, clouds, and code braces"
@@ -26,21 +28,21 @@ feature_row:
   - image_path: "/assets/images/JCM_logo.png"
     alt: "JAX-GCM differentiable climate model"
     title: "JAX-GCM"
-    excerpt: "A fully differentiable climate model enabling ML-enhanced climate science and gradient-based optimization."
+    excerpt: "A fully differentiable climate model for hybrid ML and gradient-based optimization."
     url: "/projects/jaxgcm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/GAIA_logo.png
     alt: "GAIA Initiative"
     title: "GAIA Initiative"
-    excerpt: "Harnessing AI to understand, forecast, and steward Earth's complex systems through interdisciplinary collaboration."
+    excerpt: "Harnessing AI to understand, forecast and steward Earth's complex systems."
     url: "/projects/gaia/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/climatebench2.png
-    alt: "Global-mean temperature from 1950 to 2050 showing the ClimateBench2 train, test and projection periods"
+  - image_path: /assets/images/climatebench2_logo.png
+    alt: "ClimateBench2 logo: a globe beside rising bars and a trend line with the numeral 2"
     title: "ClimateBench2"
-    excerpt: "A probabilistic benchmark for evaluating physics-based, data-driven and hybrid climate models."
+    excerpt: "A probabilistic benchmark for physics-based, data-driven and hybrid climate models."
     url: "/projects/climatebench2/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
@@ -62,41 +64,51 @@ feature_row:
 #     btn_label: "Learn more"      
 ---
 
-{% include feature_row id="intro" type="center" %}
-
-<div class="notice--warning" markdown="1">
-**We're hiring!** Applications are open for Postdoctoral Researchers in AI for Climate Science on the [MOSAIC]({{ '/projects/mosaic/' | relative_url }}) project, using agentic AI to discover better climate-model parameterizations. See the [position details and how to apply]({{ '/join/mosaic-postdoc/' | relative_url }}).
+<div class="home-hiring">
+  <div class="home-hiring__text">
+    <span class="home-hiring__badge">We're hiring!</span>
+    <p>Applications are open for Postdoctoral Researchers in AI for Climate Science on the <a href="{{ '/projects/mosaic/' | relative_url }}">MOSAIC</a> project, using agentic AI to discover better climate-model parameterizations.</p>
+  </div>
+  <a class="btn btn--large home-hiring__btn" href="{{ '/join/mosaic-postdoc/' | relative_url }}">Position details &amp; how to apply</a>
 </div>
 
-<div class="notice--info" markdown="1">
-**Interested in joining the lab?** Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our [Join the Lab]({{ '/join/' | relative_url }}) page. Please apply through the routes described there; unfortunately we're unable to reply to unsolicited enquiries about positions.
-</div>
+<p class="home-join"><strong>Interested in joining the lab?</strong> Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our <a href="{{ '/join/' | relative_url }}">Join the Lab</a> page.</p>
 
-## Project Highlights
+<div class="home-section-header">
+  <div>
+    <p class="home-eyebrow">Research</p>
+    <h2 id="project-highlights">Project Highlights</h2>
+  </div>
+  <a class="home-section-link" href="{{ '/projects/' | relative_url }}">All projects</a>
+</div>
 
 {% include feature_row class="home-projects" %}
 
 {% include feature_row id="feature_row2" %}
 
-## News
+<div class="home-section-header">
+  <div>
+    <p class="home-eyebrow">Latest</p>
+    <h2 id="news">News</h2>
+  </div>
+</div>
 
 {% assign sorted = site.news | sort: 'date' | reverse %}
 
 <div id='short_news' style="display: block;">
-  <ul>
+  <ul class="home-news">
   {% for news in sorted limit:5 %}
-    <li><b> {{ news.date | date: "%y/%m" }} </b> - {{ news.content | markdownify  | remove: "<p>" | remove: "</p>"}} </li>
+    <li><time datetime="{{ news.date | date: '%Y-%m' }}">{{ news.date | date: "%b %Y" }}</time><div>{{ news.content | markdownify | remove: "<p>" | remove: "</p>" }}</div></li>
   {% endfor %}
   </ul>
-  <a href="#" onclick="hideBlock('short_news'); showBlock('long_news'); return false;" class="btn btn--primary">Show more</a>
+  <a href="#" onclick="hideBlock('short_news'); showBlock('long_news'); return false;" class="btn home-news__toggle">Show all news</a>
 </div>
 
 <div id='long_news' style="display: none;">
-  <ul>
-  {% assign sorted = site.news | sort: 'date' | reverse %}
+  <ul class="home-news">
   {% for news in sorted %}
-    <li><b> {{ news.date | date: "%y/%m" }} </b> - {{ news.content | markdownify  | remove: "<p>" | remove: "</p>"}} </li>
+    <li><time datetime="{{ news.date | date: '%Y-%m' }}">{{ news.date | date: "%b %Y" }}</time><div>{{ news.content | markdownify | remove: "<p>" | remove: "</p>" }}</div></li>
   {% endfor %}
   </ul>
-  <a href="#" onclick="hideBlock('long_news'); showBlock('short_news'); return false;" class="btn btn--primary">Show less</a>
+  <a href="#" onclick="hideBlock('long_news'); showBlock('short_news'); return false;" class="btn home-news__toggle">Show less</a>
 </div>

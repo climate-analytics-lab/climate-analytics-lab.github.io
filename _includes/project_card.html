@@ -1,0 +1,15 @@
+{% assign p = include.project %}
+<a class="project-card" href="{{ p.url | relative_url }}">
+  <div class="project-card__media project-card__media--{{ p.header.teaser_fit | default: 'cover' }}">
+    <img src="{{ p.header.teaser | relative_url }}" alt="" loading="lazy">
+  </div>
+  <div class="project-card__body">
+    <h3>{{ p.title }}</h3>
+    {% if p.excerpt %}<p>{{ p.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>{% endif %}
+    {% if p.tags.size > 0 %}
+      <ul class="project-card__tags">
+        {% for t in p.tags %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</a>
