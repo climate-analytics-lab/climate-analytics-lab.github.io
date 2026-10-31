@@ -379,7 +379,8 @@ ol.bibliography {
 /* Home page
    ========================================================================== */
 
-.home-page {
+.home-page,
+.projects-page {
   --home-ink: #0a284c;
   --home-blue: #176baf;
   --home-sky: #80c7ee;
@@ -935,5 +936,208 @@ ol.bibliography {
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Projects page
+   ========================================================================== */
+
+.projects-page {
+  .projects-intro {
+    max-width: 46rem;
+    margin: 1.5em 0 2.5em;
+
+    h1 {
+      margin: 0 0 0.35em;
+      color: var(--home-ink);
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+
+    > p:last-child {
+      margin: 0;
+      color: var(--home-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+  }
+
+  .home-section-header {
+    margin-top: 0.5em;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25em;
+    margin-bottom: 3em;
+
+    &--current {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (max-width: 999px) {
+      &,
+      &--current {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      &,
+      &--current {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none !important;
+    background: #ffffff;
+    border: 1px solid var(--home-line);
+    border-radius: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: inherit;
+      border-color: #b9d6ea;
+      box-shadow: 0 16px 36px rgba(10, 40, 76, 0.12);
+      transform: translateY(-3px);
+
+      h3 {
+        color: var(--home-blue);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--home-sky);
+      outline-offset: 2px;
+    }
+  }
+
+  .project-card__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3eef6;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--cover img {
+      object-fit: cover;
+    }
+
+    &--contain {
+      padding: 1.1em;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .project-card__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 1.1em 1.25em 1.25em;
+
+    h3 {
+      margin: 0 0 0.4em;
+      color: var(--home-ink);
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      transition: color 0.18s ease;
+    }
+
+    p {
+      margin: 0 0 1em;
+      color: var(--home-muted);
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+  }
+
+  .project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+    margin: auto 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0.15em 0.6em;
+      color: var(--home-blue);
+      background: var(--home-mist);
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 600;
+    }
+  }
+
+  .project-topics {
+    margin: 0 0 2em;
+    padding: 1.4em 1.5em;
+    background: var(--home-mist);
+    border: 1px solid var(--home-line);
+    border-radius: 14px;
+
+    h2 {
+      margin: 0 0 0.8em;
+      padding: 0;
+      color: var(--home-ink);
+      border: 0;
+      font-size: 1rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45em;
+      padding: 0.35em 0.85em;
+      color: var(--home-ink) !important;
+      text-decoration: none !important;
+      background: #ffffff;
+      border: 1px solid var(--home-line);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+
+      &:hover {
+        border-color: var(--home-blue);
+      }
+
+      span {
+        color: var(--home-muted);
+        font-weight: 500;
+      }
+    }
   }
 }

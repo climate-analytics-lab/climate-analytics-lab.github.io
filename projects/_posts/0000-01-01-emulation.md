@@ -1,12 +1,16 @@
 ---
 title: Climate model emulation
+excerpt: "Developing climate model emulators for better parameter estimation and calibration."
 header:
   teaser: "assets/images/emulator_schematic.svg"
+  teaser_fit: contain
 code: https://github.com/duncanwp/ESEm
 data: https://doi.org/10.5281/zenodo.3856644
 tags:
   - emulation
-  - model
+  - climate modeling
+order: 8
+status: earlier
 ---
 
 Large computer models requiring hundreds of input parameters, taking thousands of core-hours to run

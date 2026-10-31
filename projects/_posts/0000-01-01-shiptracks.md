@@ -1,13 +1,17 @@
 ---
-title: Detecting Ship-tracks
+title: "Detecting ship-tracks"
+excerpt: "Using machine learning to detect ship-tracks in satellite imagery and quantify how shipping emissions brighten clouds."
 header:
-  teaser: "assets/images/shiptracks_small.jpg"
+  teaser: "/assets/images/invisible_tracks.png"
 code: https://github.com/duncanwp/shiptrack-detection
 data: https://catalogue.ceda.ac.uk/uuid/0d88dc06fd514e8199cdd653f00a7be0
 tags:
-  - shallow-clouds
-  - image-segmentation
+  - aerosols
+  - shallow clouds
   - satellite
+  - machine learning
+order: 5
+status: earlier
 ---
 
 Studied for many decades now, ship-tracks are a classic example of aerosol-cloud interactions. These perturbations to cloud albedo by aerosol emitted from ship exhaust are however very local and attempts to understand their relevance in terms of estimating global cloud droplet number and liquid water sensitivities flounder on the question of their representativeness. 

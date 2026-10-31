@@ -1,14 +1,17 @@
 ---
 title: Ship-track viewer
+excerpt: "An interactive map of every ship-track detected by our machine learning algorithm, with MODIS timestamps for each track."
 header:
   teaser: "assets/images/shiptracks_small.jpg"
 data: https://doi.org/10.5281/zenodo.7038702
 code: https://github.com/duncanwp/shiptrack-detection
 learn_more: https://www.pnas.org/doi/10.1073/pnas.2206885119
 tags:
-  - shallow-clouds
-  - image-segmentation
+  - aerosols
+  - shallow clouds
   - satellite
+order: 6
+status: earlier
 ---
 
 Easily browse all the ship-tracks detected in [Watson-Parris et al. 2022](https://www.pnas.org/doi/10.1073/pnas.2206885119) using our machine learning

@@ -1,8 +1,9 @@
 ---
-title: "ClimateBench"
-excerpt:  "Unsupervised learning determines global marine eco-provinces"
+title: "ClimateBench v1"
+excerpt: "Explore future warming under different emissions scenarios with an online emulator built on ClimateBench v1."
 header:
   teaser: "assets/images/climatebench.png"
+  teaser_fit: contain
 # featured_figure: 
 #   image: "https://www.science.org/cms/10.1126/sciadv.aay4740/asset/5f0263bd-fc33-4dc6-87df-46a19f3ab895/assets/graphic/aay4740-f2.jpeg"
 learn_more: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021MS002954
@@ -11,8 +12,10 @@ data: https://doi.org/10.5281/zenodo.5196512
 
 tags:
   - emulation
-  - climatebench
-  - model
+  - benchmarking
+  - machine learning
+order: 9
+status: earlier
 ---
 
 Easily explore future warming under different emissions scenarios using an online ClimateBench emulator as developed in 
