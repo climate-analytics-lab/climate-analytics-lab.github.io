@@ -15,7 +15,7 @@ header:
       url: "/join/"
       class: "btn--hero-secondary"
 excerpt: "We combine AI, physics and observations to understand and predict our changing climate, and train the next generation of climate and data scientists."
-tagline: "**Understanding and predicting our changing climate.** We combine AI, physics and observations to study how aerosols, clouds and the wider climate system respond to human influence, and to build better tools for predicting it, from interpretable equations discovered in observations to differentiable models and rigorous benchmarks. Through our research and teaching, we train the next generation of climate and data scientists."
+tagline: "**Understanding and predicting our changing climate.** We combine AI, physics and observations to study how aerosols, clouds and the wider climate system respond to human influence, and to build better tools for predicting it, from interpretable equations discovered in observations to differentiable models and rigorous benchmarks."
 
 feature_row:
   - image_path: "/assets/images/MOSAIC_logo_transparent.png"
