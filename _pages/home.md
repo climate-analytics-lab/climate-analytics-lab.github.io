@@ -72,7 +72,7 @@ feature_row:
   <a class="btn btn--large home-hiring__btn" href="{{ '/join/mosaic-postdoc/' | relative_url }}">Position details &amp; how to apply</a>
 </div>
 
-<p class="home-join"><strong>Interested in joining the lab?</strong> Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our <a href="{{ '/join/' | relative_url }}">Join the Lab</a> page. Please apply through the routes described there; unfortunately we're unable to reply to unsolicited enquiries about positions.</p>
+<p class="home-join"><strong>Interested in joining the lab?</strong> Current opportunities for postdocs, prospective PhD students and current UC San Diego students, and how to apply, are on our <a href="{{ '/join/' | relative_url }}">Join the Lab</a> page.</p>
 
 <div class="home-section-header">
   <div>
