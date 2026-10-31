@@ -37,6 +37,10 @@ A key component of this work is the recently Google-funded [MOSAIC]({{ '/project
 
 ## How to apply
 
-Please send a **CV** and a **short research statement** to [dwatsonparris@ucsd.edu](mailto:dwatsonparris@ucsd.edu?subject=MOSAIC%20postdoc%20application).
+Please send a **CV** and a **short research statement** to [dwatsonparris@ucsd.edu](mailto:dwatsonparris@ucsd.edu?subject=MOSAIC%20Postdoc%20Application).
+
+<div class="notice--warning" markdown="1">
+**Use the subject line `MOSAIC Postdoc Application`** (exactly as written) so your application is picked up. Clicking the email link above fills it in for you. Applications sent with a different subject line may be missed.
+</div>
 
 This is the only route for these positions. Please don't email about them otherwise, and note that I am unable to reply to individual enquiries before applications are reviewed. Other routes into the lab are described on the [Join the Lab]({{ '/join/' | relative_url }}) page.
