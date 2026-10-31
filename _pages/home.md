@@ -39,8 +39,8 @@ feature_row:
     url: "/projects/gaia/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/climatebench2.png
-    alt: "Global-mean temperature from 1950 to 2050 showing the ClimateBench2 train, test and projection periods"
+  - image_path: /assets/images/climatebench2_logo.png
+    alt: "ClimateBench2 logo: a globe beside rising bars and a trend line with the numeral 2"
     title: "ClimateBench2"
     excerpt: "A probabilistic benchmark for physics-based, data-driven and hybrid climate models."
     url: "/projects/climatebench2/"

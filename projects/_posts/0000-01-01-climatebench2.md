@@ -2,7 +2,7 @@
 title: "ClimateBench2"
 excerpt: "A probabilistic benchmark for evaluating physics-based, data-driven and hybrid climate models on an equal footing."
 header:
-  teaser: "/assets/images/climatebench2.png"
+  teaser: "/assets/images/climatebench2_logo.png"
 learn_more: https://arxiv.org/abs/2610.04558
 code: https://github.com/climate-federation/ClimateBench2
 data: https://doi.org/10.5281/zenodo.23436667
