@@ -41,7 +41,7 @@ One caveat matters a lot for climate. The atmosphere is chaotic, so small pertur
 - LEAP ran a hackathon on JCM in October, and its walkthrough notebook, [`01_jcm_sensitivities.ipynb`](https://github.com/leap-stc/diff-earth/blob/main/2026_hackathon/notebooks/01_jcm_sensitivities.ipynb), is a good starting point. It was written for a slightly different JCM version, so some output names differ: for example, evaporation is `surface_flux.evap` in JCM 3.0, not `surface_flux.evap.0`. If a name isn't found, check `sorted(ds.data_vars)`.
 - The first call to a model run, `jax.jvp` or `jax.vjp` compiles it, which takes a minute or so. Later calls with the same shapes are much faster, so time the second call, not the first.
 - JAX uses single precision (float32) by default. Keep this in mind when you compare against finite differences.
-- JCM's SPEEDY physics deliberately smooths the derivatives of its on/off switches, such as convection triggers (see "Two gotchas" in the JCM gradients guide). The model's value is unchanged, but its derivative is that of a slightly smoothed model. Forward and reverse mode will agree closely with each other, but expect differences from finite differences, especially over longer windows. Explaining those differences is part of this week's work.
+- JAX computes the exact derivative of the model as coded. SPEEDY has on/off switches, such as the convection trigger, whose derivative is zero on either side of the switch, so a gradient cannot see a grid column crossing a threshold, but a finite difference can. JCM can smooth these derivatives through its `*_smoothing` parameters (see "Two gotchas" in the JCM gradients guide), which leave the model's values unchanged. Expect forward and reverse mode to agree closely with each other, but to differ from finite differences by tens of percent, more so over longer windows. Working out why is part of this week's work.
 
 ## Tasks
 
@@ -118,8 +118,9 @@ Repeat 3.1 and 3.2 for windows of 1, 2 and 4 days.
 
 Pick one, and use the same recipe of building J, checking it against a finite difference, then making a map:
 
-- **A regional target.** Change J to rainfall over a region you care about (for example, the Sahel or India) using `surface_exchange.precipitation`, and map its sensitivity to SST.
+- **A regional target.** Change J to rainfall over a region you care about (for example, the Sahel or India) using `surface_exchange.precipitation` (in kg m⁻² s⁻¹), and map its sensitivity to SST.
 - **A different boundary condition.** Replace the SST change with a soil-moisture field, one scaling factor per land grid point, as in LEAP's [challenge 2](https://github.com/leap-stc/diff-earth/blob/main/2026_hackathon/README.md#challenge-2-one-adjoint-pass-one-map). Where does soil moisture matter for evaporation or land temperature, and is any of it non-local?
+- **Smoothing the switches.** Rebuild the model with nonzero `convection.trigger_smoothing` and `shortwave_radiation.cover_smoothing` (for example 0.05), and redo 3.1. Does the gap between the gradient and the finite difference shrink? If not, what else could explain it?
 - **Parameters instead of boundary conditions.** Work through section 3b of the LEAP notebook, which uses reverse mode to get the sensitivity of land evaporation to five surface-flux parameters at once.
 
 ## Questions
