@@ -354,6 +354,28 @@ ol.bibliography {
     }
   }
 
+  .mosaic-support {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 1057 / 395;
+    margin: 2.5em auto 2em;
+    background: #ffffff;
+
+    // Trim empty source-image padding in the display; preserve the original PNG.
+    // Display box: x=345, y=378, width=1057, height=395 in the 1760x1144 image.
+    img {
+      position: absolute;
+      display: block;
+      width: 166.509%;
+      max-width: none;
+      height: auto;
+      left: -32.64%;
+      top: -95.696%;
+    }
+  }
+
   .mosaic-callout__eyebrow {
     color: #a8dafa !important;
     font-size: 0.75em;
