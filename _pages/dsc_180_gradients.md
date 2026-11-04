@@ -135,4 +135,4 @@ Submit on the form linked in Slack before section.
 
 ## Looking ahead
 
-In week 7 we will build an emulator of JCM itself over a small set of parameters, and compare what it tells us with the gradients from this week.
+In weeks 7–8 you will take gradients through your ClimateBench emulator instead, and compare what they tell you with the gradients through JCM from this week.

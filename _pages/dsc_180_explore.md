@@ -6,21 +6,17 @@ toc: true
 toc_sticky: true
 ---
 
-This is the last working week of Phase I, and the most open. Rather than more set tasks, you will test one or two ideas for Phase II cheaply, so that you choose your project based on evidence rather than guesswork. By the end of the week your team should have a short written proposal and a 3-minute pitch.
+This is the last working week of Phase I, and the most open. Rather than more set tasks, you will look back over what you have learned, then test one or two ideas for Phase II cheaply, so that you choose your project based on evidence rather than guesswork. By the end of the week your team should have a short written proposal and a 3-minute pitch.
 
-Good Phase II projects usually start from something that surprised you in Phase I: a gradient that went wrong, an emulator that failed on one kind of scenario, or a result you didn't believe. Look back through your `NOTES.md` before you start.
-
+Good Phase II projects usually start from something that surprised you in Phase I: a gradient that went wrong, an emulator that failed on one kind of scenario, or a result you didn't believe.
 ## Tasks
 
-### 1. Stress-test your emulator (half a day)
+### 1. Look back (a day)
 
-Before building on your week 8 emulator, check that it behaves physically in scenarios it was never trained on. Try at least two of these:
+Before choosing anything, spend a day consolidating what you have learned:
 
-- Emissions stop entirely in 2030.
-- Emissions stay fixed at their 2015 values.
-- SO₂ and black carbon emissions are removed in 2030, with everything else as in `ssp245`.
-
-Does the response have the sign, size and timescale you would expect? Note anything that looks wrong; it may be your Phase II project.
+- Re-read your `NOTES.md` and your weekly answers. List the three results from Phase I you understand least well, and the one that surprised you most.
+- Pick one of those and try to explain it to a teammate without notes. Where your explanation gets vague is often where a good project question is hiding.
 
 ### 2. A feasibility probe (most of the week)
 
@@ -32,9 +28,11 @@ Pick a Phase II direction from the [ideas on the course page](/dsc_180/#phase-ii
 | Physically constrained emulators | Add a global-mean energy-balance layer to your network and test it on one of your task 1 scenarios | It behaves more sensibly out of distribution, at little cost in skill |
 | Gradient-based scenario analysis | Extend the week 8 inverse problem with a regional target or an emulator ensemble | The answers are stable and physically interpretable |
 | Longer-window gradients in JCM | Average week 6 gradients over many starting states (the "ensemble adjoint" of [Lea et al., 2000](https://doi.org/10.3402/tellusa.v52i5.12283)) and compare with finite differences | Averaging extends the window over which gradients agree with finite differences |
-| Calibrating JCM | Use gradient descent on one or two week 7 parameters against CERES global means, then compare with your emulator's answer | Both approaches find the same region of parameter space, at very different costs |
+| Calibrating JCM | Use gradient descent on one or two SPEEDY parameters, such as cloud albedo (`shortwave_radiation.albcl`), against CERES global means, following JCM's [optimization notebook](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/02_optimization_example.ipynb) | The loss is well behaved and the calibrated values are physically plausible |
 | A JCM–JEM benchmark | Time a one-year coupled JCM–JEM run with rising CO₂, and estimate the cost of 20 scenarios of 100 years | It fits within your compute, and the result looks like a sensible climate |
-| Decision support | Identify one user and one question, then sketch a Streamlit prototype on your week 8 emulator | You can state what the user would decide differently with your tool |
+| Decision support | Identify one user and one question, then sketch a Streamlit prototype on your weeks 7–8 emulator | You can state what the user would decide differently with your tool |
+
+Alongside the probe, read one or two papers on your idea (the [reading list](/dsc_180_reading) has starting points), and talk it over with Amirhossein or me before you commit.
 
 ### 3. Write a proposal
 
@@ -58,4 +56,3 @@ Submit on the form linked in Slack before section.
 2. What is the biggest risk in your proposed project, and what is your fallback?
 3. What do you need from us to get started: data, compute, or people to talk to?
 
-Background papers for most of these directions are on the [reading list](/dsc_180_reading).
