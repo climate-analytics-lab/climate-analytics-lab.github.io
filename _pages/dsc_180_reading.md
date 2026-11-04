@@ -36,7 +36,7 @@ These are **optional** background papers that go with the weekly topics. The req
 ## Weeks 7–8: Emulating models, and simple climate models
 
 - Watson-Parris, D., Williams, A., Deaconu, L., & Stier, P. (2021). Model calibration using ESEm v1.1.0 – an open, scalable Earth system emulator. *Geoscientific Model Development* 14, 7659–7672. [doi:10.5194/gmd-14-7659-2021](https://doi.org/10.5194/gmd-14-7659-2021)
-  *Emulating a climate model over its parameters, then using the emulator for calibration. This is the week 7 workflow.*
+  *Emulating a climate model over its parameters, then using the emulator for calibration: the main alternative to gradient-based calibration.*
 - Leach, N. J., et al. (2021). FaIRv2.0.0: a generalized impulse response model for climate uncertainty and future scenario exploration. *Geoscientific Model Development* 14, 3007–3036. [doi:10.5194/gmd-14-3007-2021](https://doi.org/10.5194/gmd-14-3007-2021)
   *The kind of simple climate model the IPCC uses for scenario assessment, and a natural global-mean component for a pattern-scaling hybrid.*
 - Bonev, B., et al. (2023). Spherical Fourier neural operators: Learning stable dynamics on the sphere. *Proceedings of the 40th International Conference on Machine Learning (ICML)*. [arXiv:2306.03838](https://arxiv.org/abs/2306.03838)
