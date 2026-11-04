@@ -71,4 +71,4 @@ When working with the output, select vertical levels by coordinate value, not by
 
 ## Looking ahead
 
-Week 6 will use `jax.grad` through these same experiments. For example, you will compute the sensitivity of the ERF or of the slab-ocean equilibrium warming to SPEEDY's cloud and convection parameters, check it against finite differences, and recover a perturbed parameter in a twin experiment. See JCM's [`02_optimization_example.ipynb`](https://github.com/climate-analytics-lab/jax-gcm/blob/dev/notebooks/02_optimization_example.ipynb) and JEM's [coupled-gradient example](https://github.com/climate-analytics-lab/jax-esm/blob/main/examples/01_basic/03_aquaplanet_response_to_SST_perturbation_using_gradient.ipynb). Keep your runs reproducible so you can reuse them.
+In [week 6](/dsc_180_gradients) you will take derivatives through JCM directly, and use them to map how the atmosphere responds to sea-surface temperature and soil moisture without running perturbation experiments.
